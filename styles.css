@@ -848,9 +848,9 @@ p {
 		border-radius: 4px;
     }
     .block-form{
-        padding: 100px;
+        padding: 44px;
         padding-top: 25px;
-        padding-bottom: 70px;
+        padding-bottom: 70px
     }
 	#_form_1_ ._error._above ._error-arrow {
 		display: none;
