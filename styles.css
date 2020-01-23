@@ -629,6 +629,7 @@ p {
     }
     
     .form-button{
+        font-size: 14px;
         width: 70%;
     }
 
@@ -746,6 +747,10 @@ p {
 }
 
 @media screen and (max-width: 400px) {
+
+    .form-button{
+        width: 100%;
+    }
 
     body {
         background-position: 33% center;
