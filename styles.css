@@ -630,7 +630,8 @@ p {
     
     .form-button{
         font-size: 14px;
-        width: 70%;
+        width: 80%;
+        white-space: nowrap;
     }
 
     .form-text{
@@ -792,6 +793,7 @@ p {
     
     .form-button{
         font-size: 14px;
+        white-space: pre-wrap;
     }
 
     .checkbox-divs {
