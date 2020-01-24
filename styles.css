@@ -664,12 +664,12 @@ p {
     }
 
     .block-form {
-        padding: 40px;
+        padding: 34px;
 		padding-top: 25px;
 		padding-bottom: 25px;
 		box-sizing: border-box;
 		box-shadow: none;
-		width: 100%;
+        width: 100%;
     }
 	.col-xl-6.col-lg-12.col-md-12.col-sm-12.col-12:nth-child(2) {
 		width: 100%;
@@ -679,7 +679,10 @@ p {
     }
 
     .show-mobile {
-        display: block;
+        display: flex;
+        text-align: initial;
+        align-items: center;
+        flex-direction: column;
     }
 
     .newsletter-title {
@@ -706,13 +709,16 @@ p {
     }
 
     .subtitle-mobile {
+        padding-left: 16px;
         font-size: 24px;
     }
 
     .block-form__title {
-        font-size: 18px;
+        font-size: 12.5px;
         margin-bottom: 30px;
         letter-spacing: 0.045em;
+        white-space: nowrap;
+}
     }
 
     .features-list {
@@ -720,16 +726,18 @@ p {
         margin-bottom: 25px;
         text-align: left;
     }
-}
+
 
 @media(max-width: 576px) {
     .features-list li {
         font-size: 18px;
     }
 	.features-list li {
-		margin-bottom: 12px;
+        margin-bottom: 12px;
+        line-height: 24px;
 	}
 }
+
 
 
 @media(max-width: 425px) {
@@ -768,7 +776,7 @@ p {
     }
 
     .mobile-promo-text {
-        text-align: center;
+        
     }
 
     .features-list li {
@@ -832,9 +840,19 @@ p {
 	}
 	.container.promo > .row > .block-text{
 		margin-right: 60px;
-	}
+    }
+    
 }
-@media (min-width: 400px) and (max-width:1099px){
+
+@media (max-width: 700px) and (min-width: 1099){
+    .block-form {
+        padding: 70px;
+        padding-top: 25px;
+        padding-bottom: 70px;
+    }
+}
+
+@media (min-width: 420px) and (max-width:1099px){
 	#_form_1_ ._error-inner {
 		padding: 0;
 		background-color: white;
@@ -848,20 +866,20 @@ p {
 		border-radius: 4px;
     }
     .block-form{
-        padding: 44px;
+        padding: 70px;
         padding-top: 25px;
         padding-bottom: 70px
     }
 	#_form_1_ ._error._above ._error-arrow {
 		display: none;
 	}
-	span.subtitle-mobile.text-uppercase:before {
+	/* span.subtitle-mobile.text-uppercase:before {
 		content: "";
 		width: 13px;
 		height: 45px;
 		display: block;
 		float: left;
-	}
+	} */
 	.subtitle-mobile img {
 		top: -3px;
 	}
@@ -919,7 +937,7 @@ p {
 		background-size: 17px 17px;
 	}
 	.title-mobile {
-		margin-right: 62px;
+		margin-right: 72px;
 		font-size: 48px;
 	}
 	.features-list {
