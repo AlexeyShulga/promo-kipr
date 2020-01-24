@@ -440,7 +440,7 @@ p {
 .subtitle-mobile img {
     position: absolute;
     top: 5px;
-    right: -40px;
+    
 }
 
 .features-list {
@@ -491,7 +491,7 @@ p {
 }
 
 .form {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .form-input {
@@ -537,7 +537,7 @@ p {
 
 .styled-checkbox+label:before {
     content: "";
-    margin-right: 12px;
+    margin-right: 5px;
     display: inline-block;
     vertical-align: text-top;
     width: 16px;
@@ -640,7 +640,7 @@ p {
     .checkbox-divs {
         height: 160px;
         width: 100%;
-        padding: 20px;
+        padding: 10px;
     }
 
     body {
@@ -715,7 +715,7 @@ p {
 
     .block-form__title {
         font-size: 12.5px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         letter-spacing: 0.045em;
         white-space: nowrap;
 }
@@ -926,7 +926,8 @@ p {
 		display: none;
 	}
 	.subtitle-mobile img {
-		top: -8px;
+		top: -6px;
+        right: 0px;
 	}
 	.features-list li:before {
 		left: -30px;
