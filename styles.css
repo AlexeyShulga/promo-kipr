@@ -266,7 +266,23 @@
 } */
 
 
+
+
 /*#_form_1_ { position:relative; text-align:left; margin:25px auto 0; padding:20px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; *zoom:1; background:#fff !important; border:0px solid #b0b0b0 !important; width:500px; -moz-border-radius:0px !important; -webkit-border-radius:0px !important; border-radius:0px !important; color:#000 !important; }*/
+
+
+#_form_10_ ._error-inner {
+    padding: 8px 12px;
+    background-color: #f37c7b;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
 
 #_form_1_ ._form-title {
     font-size: 22px;
@@ -484,6 +500,7 @@ p {
     line-height: 33px;
     text-align: center;
     color: #333333;
+    margin-bottom: 25px;
 }
 
 .palm-mobile {
@@ -504,7 +521,7 @@ p {
     font-size: 16px;
     line-height: 22px;
     color: #000;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 	box-sizing: border-box;
 }
 
@@ -597,6 +614,7 @@ p {
     margin-bottom: 20px;
     flex-direction: column;
     height: 250px;
+    margin-top: 25px;
 }
 
 .checkbox-divs div {
@@ -793,7 +811,7 @@ p {
     
     .form-button{
         font-size: 14px;
-        white-space: pre-wrap;
+    
     }
 
     .checkbox-divs {
