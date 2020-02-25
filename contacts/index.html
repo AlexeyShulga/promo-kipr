@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div  class="all-cuprus">
+                <div class="header" data-type="background">
+                    <div style="padding: 36px 50px;">
+                        <h1>Добро пожаловать!</h1>
+                        <h3>Выберите удобный для вас способ связи!</h3>
+                    </div>
+                   
+                </div>
+                <div class="sea-bg" data-type="background" style="display:flex; justify-content: center;">
+                    <div class="messengers">
+                        
+                        <div class="mesengers-container">
+                            <div class="logotype">
+                                <img style="margin-right: 16px;margin-bottom: 29px;" src="./assets/img/AllCypruslogo.png" alt="">
+                                <div>
+                                    <p style="font-weight: 600;font-size: 16px;line-height: 104.18%;">All Cyprus</p>
+                                    <p style="font-size: 16px;line-height: 104.18%;">Горящие туры на Кипр</p>
+                                </div>
+                            </div>
+                            <div class="messengers__row">
+                                <div>
+                                    <div style="background: #665CAC;" class="messenger__viber">
+                                        <img src="./assets/img/viber.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="background: #1F98D4;" class="messenger__telegram">
+                                        <img src="./assets/img/telegram.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="background: #5B88BD;" class="messenger__vk">
+                                        <img src="./assets/img/vk.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                           <div class="messengers__row">
+                                <div>
+                                    <div style="background: #0284FF;" class="messenger__messenger">
+                                        <img src="./assets/img/messendger.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="background: #24D366;" class="messenger__wa">
+                                        <img src="./assets/img/wa.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="background: #00AFF0;" class="messenger__skype">
+                                        <img src="./assets/img/skype.png" alt="">
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                
+            </div>
+        </div>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    $window = $(window);
+$('div[data-type="background"]').each(function(){
+     var $bgobj = $(this);
+ $(window).scroll(function() {
+        var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+        var coords = '50% '+ yPos + 'px';
+        $bgobj.css({ backgroundPosition: coords });
+    }); 
+ });    
+}); 
+    </script>
+</body>
+</html>
