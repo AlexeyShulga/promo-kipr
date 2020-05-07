@@ -203,8 +203,16 @@
                     var results = new RegExp(regexStr, 'i').exec(window.location.href);
                     return results != undefined ? decodeURIComponent(results[1]) : false;
                   };
-                
+				  var visible_inputs = 0;
+				  var gets_inputs = 0;
                   for (var i = 0; i < allInputs.length; i++) {
+				  
+					var style = window.getComputedStyle(allInputs[i], null);
+					var style_parent = window.getComputedStyle(allInputs[i].parentElement, null);
+					if (style.display !== 'none' && style_parent.display !== 'none' ) {
+						visible_inputs++;
+					}
+				  
                     var regexStr = "field\\[(\\d+)\\]";
                     var results = new RegExp(regexStr).exec(allInputs[i].name);
                     if (results != undefined) {
@@ -218,6 +226,7 @@
                       if (allInputs[i].dataset.autofill === "false") {
                         continue;
                       }
+					  gets_inputs++;
                       if (allInputs[i].type == "radio" || allInputs[i].type == "checkbox") {
                         if (allInputs[i].value == fieldVal) {
                           allInputs[i].checked = true;
@@ -227,6 +236,9 @@
                       }
                     }
                   }
+				  
+				  if(gets_inputs == visible_inputs && gets_inputs != 0)
+					form_to_submit.submit();
                 
                   var remove_tooltips = function() {
                     for (var i = 0; i < tooltips.length; i++) {
